@@ -45,6 +45,9 @@ class Robot:
          for i in componenti:
             if i.peso_kg <= peso_massimo:
                 componenti.remove(i)
+def __main__():
+    componente = Componente(a, b,123)
+    pint(f"{componente}")
+    
 
-
-#aaa
+    
