@@ -1,12 +1,12 @@
 
-class Componente
+class Componente:
     def __init__(self, codice: str, nome: str, peso_kg: float) -> None:
         self.codice = codice
         self.nome = nome
         self.peso_kg = peso_kg
         
 
-class Robot
+class Robot:
     def __init__(self, codice: str, modello: str, applicazione: str, peso_massimo_componenti_kg: float, stato: str) -> None:
         self.codice = codice
         self.modello = modello
@@ -25,28 +25,25 @@ class Robot
         for i in componenti:
             return i.peso_kg
         
-    def cerca_componente(codice: str)-> Componente
+    def cerca_componente(codice: str)-> Componente:
         for i in componenti:
             if i.codice == codice:
                 return i
             else:
                 raise ValueError("componente non esiste")
     
-    def rimuovi_componente (codice: str)-> Componente
+    def rimuovi_componente (codice: str)-> Componente:
         for i in componenti:
             if i.codice == componenti.codice:
                 return i
                 componenti.remove(i)
-            else
+            else:
                 raise ValueError("componente non esiste")
             
     
-    def componenti_sotto_peso (peso_massimo: float)
+    def componenti_sotto_peso (peso_massimo: float):
          for i in componenti:
             if i.peso_kg <= peso_massimo:
                 componenti.remove(i)
 
-            
-        
-    
-    
+
