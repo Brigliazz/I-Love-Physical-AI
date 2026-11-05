@@ -4,3 +4,4 @@ class Componente
         self.codice = codice
         self.nome = nome
         self.peso_kg = peso_kg
+ 
