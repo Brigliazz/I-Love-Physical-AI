@@ -47,3 +47,4 @@ class Robot:
                 componenti.remove(i)
 
 
+#aaa
